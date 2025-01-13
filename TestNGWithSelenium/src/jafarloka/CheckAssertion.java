@@ -85,4 +85,29 @@ public class CheckAssertion {
 			
 			Assert.assertNotEquals(url, expectedUrl);
 	}
+
+	public void checkAssertionsTrue() {
+		
+		System.setProperty(
+			"webdriver.chrome.driver", 
+			"C:\\Tests\\Python-Selenium-From-Tutorial-01\\chromedriver.exe"
+		);
+			
+		ChromeDriver driver = new ChromeDriver();
+			
+		driver.get("https://opensource-demo.orangehrmlive.com");
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		
+		WebElement el1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("username")));
+		
+		el1.sendKeys("Admin");
+		driver.findElement(By.name("password")).sendKeys("admin123");
+		
+		driver.findElement(By.xpath("//button[text()[contains(., 'Login')]]")).click();
+		
+		WebElement t1 = driver.findElement(By.xpath("//nav[@class='oxd-navbar-nav']"));
+		
+		Assert.assertTrue(t1.isDisplayed());
+	}
 }
