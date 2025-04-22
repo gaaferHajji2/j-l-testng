@@ -17,7 +17,7 @@ public class TestSoftDeleteWithService {
 	@Test
 	public void testSoftDeleteWithService() {
 		
-		File serviceFile = new File("C:\\\\Tests\\\\Python-Selenium-From-Tutorial-01\\\\chromedriver.exe");
+		File serviceFile = new File("C:\\Tests\\Python-Selenium-From-Tutorial-01\\chromedriver.exe");
 		
 		ChromeDriverService service;
 		
