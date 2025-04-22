@@ -32,6 +32,8 @@ public class RealTestForPriority {
 		
 		driver = new ChromeDriver(service);
 		
+		driver.manage().window().maximize();
+		
 		driver.get("https://opensource-demo.orangehrmlive.com");
 		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
