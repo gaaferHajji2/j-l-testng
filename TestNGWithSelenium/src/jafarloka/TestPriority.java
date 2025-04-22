@@ -4,22 +4,22 @@ import org.testng.annotations.Test;
 
 public class TestPriority {
 
-	@Test
+	@Test(priority = 1)
 	public void a() {
 		System.out.println("This Is The Test Case a");
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void c() {
 		System.out.println("This Is The Test Case c");
 	}
 	
-	@Test
+	@Test (priority = 4)
 	public void b() {
 		System.out.println("This Is The Test Case b");
 	}
 	
-	@Test
+	@Test (priority = 3)
 	public void d() {
 		System.out.println("This Is The Test Case d");
 	}
