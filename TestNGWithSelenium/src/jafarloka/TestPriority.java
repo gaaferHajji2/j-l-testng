@@ -1,5 +1,6 @@
 package jafarloka;
 
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class TestPriority {
@@ -9,7 +10,7 @@ public class TestPriority {
 		System.out.println("This Is The Test Case a");
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, enabled=false)
 	public void c() {
 		System.out.println("This Is The Test Case c");
 	}
@@ -19,6 +20,7 @@ public class TestPriority {
 		System.out.println("This Is The Test Case b");
 	}
 	
+	@Ignore
 	@Test (priority = 3)
 	public void d() {
 		System.out.println("This Is The Test Case d");
