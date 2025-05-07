@@ -14,13 +14,13 @@ import org.testng.annotations.Test;
 
 public class RealTestForPriority {
 	
-	ChromeDriver driver;
+	public static ChromeDriver driver;
 	
 	ChromeDriverService service;
 	
 	File serviceFile;
 	
-	WebDriverWait wait;
+	public static WebDriverWait wait;
 	
 	String homePageUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 

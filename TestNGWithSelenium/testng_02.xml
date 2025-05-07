@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="JafarLokaSuite-02">
+  <test thread-count="5" name="JafarLokaTest-02">
+    <classes>
+    
+      <class name="jafarloka.SkipTestUsingTestNGXMLFile">
+      	<methods>
+      		<exclude name="c"></exclude>
+      		<exclude name="d"></exclude>
+      	</methods>
+      </class>
+      
+      <class name="jafarloka.TestPriority">
+      	<methods>
+      		<include name="a"></include>
+      		<include name="b"></include>
+      		<include name="d"></include>
+      	</methods>
+      </class>
+      
+    </classes>
+  </test> <!-- JafarLokaTest-02 -->
+</suite> <!-- JafarLokaSuite-02 -->
