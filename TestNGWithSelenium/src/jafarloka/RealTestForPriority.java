@@ -47,6 +47,8 @@ public class RealTestForPriority {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
+		System.out.println("The Current URL Is: " + driver.getCurrentUrl());
+		
 		Assert.assertEquals(driver.getCurrentUrl(), homePageUrl);
 	}
 	
