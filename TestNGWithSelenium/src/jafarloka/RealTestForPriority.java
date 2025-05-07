@@ -45,6 +45,8 @@ public class RealTestForPriority {
 		
 		driver.findElement(By.xpath("//button[text()[contains(., 'Login')]]")).click();
 		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 		Assert.assertEquals(driver.getCurrentUrl(), homePageUrl);
 	}
 	
