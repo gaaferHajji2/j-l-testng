@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class TestSkip {
 
-	@Test(priority = 1)
+	@Test(priority = 5)
 	public void a() {
 		System.out.println("This Is The Test Case a");
 	}
@@ -15,7 +15,7 @@ public class TestSkip {
 		System.out.println("This Is The Test Case c");
 	}
 	
-	@Test (priority = 4)
+	@Test (priority = 2)
 	public void b() {
 		System.out.println("This Is The Test Case b");
 	}

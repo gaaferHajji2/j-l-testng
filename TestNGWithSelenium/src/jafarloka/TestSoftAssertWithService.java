@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class TestSoftDeleteWithService {
+public class TestSoftAssertWithService {
 
 	@Test
 	public void testSoftDeleteWithService() {
