@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestMultipleClassesWithStatic">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="jafarloka.RealTestForPriority">
+      	<methods>
+      		<exclude name="testLogout"></exclude>
+      		<exclude name="exitFromBrowser"></exclude>
+      	</methods>
+      </class>
+      
+      <class name="jafarloka.CallMultipleClasses" />
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- TestMultipleClassesWithStatic -->

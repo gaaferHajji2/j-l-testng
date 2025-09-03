@@ -22,7 +22,7 @@ public class RealTestForPriority {
 	
 	public static WebDriverWait wait;
 	
-	String homePageUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
+	public static String homePageUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 
 	@Test(priority = 1)
 	public void testLogin() {
