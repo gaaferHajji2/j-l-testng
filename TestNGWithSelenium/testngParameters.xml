@@ -5,7 +5,7 @@
   
   	<parameter name="jloka01" value="JLoka-01"></parameter>
   	<parameter name="jloka02" value="JLoka-02"></parameter>
-
+  	
     <classes>
       <class name="jafarloka.TestParametersWithTestNG"/>
     </classes>
