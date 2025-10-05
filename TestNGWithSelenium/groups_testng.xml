@@ -2,10 +2,29 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			<include name="test-01"></include>
+  			<include name="test-03"></include>
+  		</run>
+  	</groups>
+  	
   	<classes>
-  		<class name="jafarloka.JLokaTestGroup">
-  			
-  		</class>
+  		<class name="jafarloka.JLokaTestGroup"></class>
   	</classes>
+  	
   </test> <!-- Test -->
+  
+  <test name="Test-02">
+  	
+  	<groups>
+  		<run>
+  			<include name="test-02"></include>
+  		</run>
+  	</groups>
+  	
+	<classes>
+	  	<class name="jafarloka.JLokaTestGroup"></class>
+	</classes>
+  </test>
 </suite> <!-- Suite -->
