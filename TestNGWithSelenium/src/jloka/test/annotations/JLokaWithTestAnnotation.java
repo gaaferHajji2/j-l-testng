@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 @Test
 public class JLokaWithTestAnnotation {
 
-	public void login() {
-		System.out.println("Login method executed");
+	public void doAction1() {
+		System.out.println("Do Action1 executed");
 	}
 	
-	public void logout() {
-		System.out.println("Logout method executed");
+	public void doAction2() {
+		System.out.println("Do Action2 executed");
 	}
 	
 }

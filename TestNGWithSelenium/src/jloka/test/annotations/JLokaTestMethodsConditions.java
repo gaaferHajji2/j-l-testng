@@ -16,6 +16,7 @@ public class JLokaTestMethodsConditions {
 	@AfterMethod
 	public void logout() {
 		System.out.println("Logout executed");
+		System.out.println("---------------");
 	}
 	
 	@Test
