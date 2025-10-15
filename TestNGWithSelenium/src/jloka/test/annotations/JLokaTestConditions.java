@@ -1,6 +1,8 @@
 package jloka.test.annotations;
 
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -28,6 +30,20 @@ public class JLokaTestConditions {
 	@AfterTest
 	public void logout() {
 		System.out.println("Logout is executed");
+	}
+	
+	@BeforeSuite
+	public void checkReq() {
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++");
+		System.out.println("Checking the request of user from firewall");
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++");
+	}
+	
+	@AfterSuite
+	public void closeUserRes() {
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++");
+		System.out.println("Close the session of user");
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++");
 	}
 	
 }
