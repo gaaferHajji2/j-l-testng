@@ -11,6 +11,7 @@ public class JLokaWithTestAnnotation {
 	
 	public void doAction2() {
 		System.out.println("Do Action2 executed");
+		System.out.println("----------------");
 	}
 	
 }
